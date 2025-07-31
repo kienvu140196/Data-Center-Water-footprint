@@ -325,8 +325,7 @@ def Cooling_Tower(T_oa,RH_oa,P_oa,AT_CT,Power_IT,Q,delta_T_CT,Windage_p,CC,LGRat
     # Evaporated water:
     Water_CT_evaporated = Q/Latent_heat_vaporization(T_CT)
     # Mass-flow of cooling tower air
-    #m_air = Water_CT_evaporated/(d_oasa-d_oa)
-    m_air = Water_CT_evaporated/LGRatio
+    m_air = m_CT/LGRatio
     # Drift loss water: 
     Water_CT_windage =  m_CT*Windage_p
     # Drain-off water:
